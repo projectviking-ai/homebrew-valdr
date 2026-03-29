@@ -3,10 +3,12 @@ class Valdr < Formula
   homepage "https://github.com/projectviking-ai/valdr"
   version "0.1.1"
 
+  depends_on "node"
+
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.1.1/valdr-v0.1.1-macos-arm64.tar.gz"
-      sha256 "a1021c82a388b3119b33d7d7d8a08d54902ed0dc4cc63cb47732c9e092df3664"
+      sha256 "da2a3332bdfc9f02382ba121945497393e6feec0d873a6e71e19108113f633de"
     end
   end
 
