@@ -1,13 +1,13 @@
 class Valdr < Formula
   desc "Valdr CLI for project orchestration"
   homepage "https://github.com/projectviking-ai/valdr"
-  version "0.2.1"
+  version "0.2.2"
 
   depends_on arch: :arm64
   depends_on :macos
 
-  url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.2.1/valdr-v0.2.1-macos-arm64.tar.gz"
-  sha256 "1ebb506ac0d27f890c9c04e12ed55f4775c20ceeefca02629f9b3a6417de4aed"
+  url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.2.2/valdr-v0.2.2-macos-arm64.tar.gz"
+  sha256 "a776d8d0af9552e114c9f19526dbb379501a2a20e63369d64ce780985957f11a"
 
   def install
     libexec.install Dir["*"]
