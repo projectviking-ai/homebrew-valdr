@@ -1,21 +1,21 @@
 class Valdr < Formula
   desc "Valdr CLI for project orchestration"
   homepage "https://github.com/projectviking-ai/valdr"
-  version "0.3.3"
+  version "0.3.4"
 
   on_macos do
     depends_on arch: :arm64
-    url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.3.3/valdr-v0.3.3-macos-arm64.tar.gz"
-    sha256 "5bd2d7b97c3080a15d3b04b59264d91517b74000f875e79be09532effe5ff593"
+    url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.3.4/valdr-v0.3.4-macos-arm64.tar.gz"
+    sha256 "cf10f6c024e21b5c791114d00cf7c20b0e43248495f9c48ce1364963d2ff3ca7"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.3.3/valdr-v0.3.3-linux-arm64.tar.gz"
-      sha256 "0839f4dd2188dadca69f3e0085983c85272216f1fbebd4443db9b7756e48ea00"
+      url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.3.4/valdr-v0.3.4-linux-arm64.tar.gz"
+      sha256 "8bfd7cbc791abf100fac4f65bd1dd7cde7febbc84ec57bb891024002a0f27199"
     elsif Hardware::CPU.intel?
-      url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.3.3/valdr-v0.3.3-linux-x64.tar.gz"
-      sha256 "98f6fcea1cf732022cff61034555a35d2a0b252e3e6a75807c664e838564a46d"
+      url "https://github.com/projectviking-ai/valdr-releases/releases/download/v0.3.4/valdr-v0.3.4-linux-x64.tar.gz"
+      sha256 "0461798f22da6786292d2ccb9bd215561c754ea231e218a134bd5628bf7ba3ca"
     end
   end
 
